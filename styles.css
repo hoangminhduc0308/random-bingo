@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(156, 187, 208, 0.751);
+}
+
+textarea {
+	resize: none;
+}
+
+#input-zone {
+	background-color: red;
+	
+	
+	margin: auto;
+}
+
+#computer-zone {
+	background-color: blue;
+	
+	
+	margin: auto;
+}
+
