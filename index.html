@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="./scripts.js"></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./scripts.js"></script>
-</head>
+	<body>
+		<h1>Random Bingo!</h1>
+		<div id="config">
+			<span>Enter edge length of bingo square...</span>
+			<textarea maxlength="3" id="boardsize" cols="3" rows="1"></textarea>
+			<button onclick="create_board_manual()">Create player board</button>
+			<button onclick="create_board_auto()">
+				Use randomly generated board
+			</button>
+		</div>
 
-<body>
-    <h1>Random Bingo!</h1>
-    <div id="config">
-        <span>Enter edge length of bingo square...</span>
-        <textarea maxlength="3" id="boardsize" cols="3" rows="1"></textarea>
-        <button onclick="create_board_manual()">Create player board</button>
-        <button onclick="create_board_auto()">Use randomly generated board</button>
-    </div>
-
-    <div id="input-zone"></div>
-    <div id="computer-zone"></div>
-</body>
-
+		<div style="width: 50%; float: left; margin: auto">
+			<div id="input-zone"></div>
+		</div>
+		<div style="width: 50%; float: right; margin: auto">
+			<div id="computer-zone"></div>
+		</div>
+		<div id="game"></div>
+	</body>
 </html>
